@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>📝 Course Registration Form</h2>
+        
+        <form action="#" method="POST">
+            <!-- Applicant Information Section -->
+            <fieldset>
+                <legend>👤 Applicant Information</legend>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicantid">Applicant ID</label>
+                        <input type="text" id="applicantid" name="applicantid" placeholder="Enter your applicant ID" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male" required> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nationality">Nationality</label>
+                        <select id="nationality" name="nationality" required>
+                            <option value="" disabled selected>Select your nationality</option>
+                            <option value="indian">Indian</option>
+                            <option value="american">American</option>
+                            <option value="british">British</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bloodgroup">Blood Group</label>
+                        <select id="bloodgroup" name="bloodgroup" required>
+                            <option value="" disabled selected>Select blood group</option>
+                            <option value="apos">A+</option>
+                            <option value="aneg">A-</option>
+                            <option value="bpos">B+</option>
+                            <option value="bneg">B-</option>
+                            <option value="abpos">AB+</option>
+                            <option value="abneg">AB-</option>
+                            <option value="opos">O+</option>
+                            <option value="oneg">O-</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="religion">Religion</label>
+                        <select id="religion" name="religion" required>
+                            <option value="" disabled selected>Select your religion</option>
+                            <option value="islam">Islam</option>
+                            <option value="hinduism">Hinduism</option>
+                            <option value="christianity">Christianity</option>
+                            <option value="buddhism">Buddhism</option>
+                            <option value="sikhism">Sikhism</option>
+                            <option value="judaism">Judaism</option>
+                            <option value="atheism">Atheism</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Mailing Address</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Enter your full address" required></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Course Selection Section -->
+            <fieldset>
+                <legend>📖 Course & Batch Details</legend>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="primarycourse">Primary Course</label>
+                        <select id="primarycourse" name="primarycourse" required>
+                            <option value="" disabled selected>Select Primary Course</option>
+                            <option value="fullstack">Full Stack Web Development</option>
+                            <option value="datascience">Data Science & Analytics</option>
+                            <option value="cybersecurity">Cybersecurity Essentials</option>
+                            <option value="uiux">UI/UX Design Masterclass</option>
+                            <option value="cloud">Cloud Computing (AWS/Azure)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="batchslot">Preferred Batch Slot</label>
+                        <select id="batchslot" name="batchslot" required>
+                            <option value="" disabled selected>Select Batch Slot</option>
+                            <option value="morning">Morning (09:00 AM - 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (02:00 PM - 05:00 PM)</option>
+                            <option value="evening">Evening (06:00 PM - 09:00 PM)</option>
+                            <option value="weekend">Weekend Special (Sat-Sun)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="learningmode">Learning Mode</label>
+                        <select id="learningmode" name="learningmode" required>
+                            <option value="" disabled selected>Select Mode</option>
+                            <option value="online">Online Live Classes</option>
+                            <option value="offline">In-Person Campus Classes</option>
+                            <option value="hybrid">Hybrid Learning</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="academicyear">Academic Year</label>
+                        <input type="text" id="academicyear" name="academicyear" placeholder="e.g. 2026-2027" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="institution">Previous Institution</label>
+                    <input type="text" id="institution" name="institution" placeholder="Enter school, college, or university name" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="graduationyear">Graduation/Passing Year</label>
+                        <select id="graduationyear" name="graduationyear" required>
+                            <option value="" disabled selected>Select Year</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="percentage">Last Score (CGPA / %)</label>
+                        <input type="number" id="percentage" name="percentage" placeholder="Enter GPA or Percentage" min="0" max="100" step="0.01" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Preferences & Verification Section -->
+            <fieldset>
+                <legend>ℹ️ Preferences & Documents</legend>
+                
+                <div class="checkbox-section">
+                    <label>Programming Foundations (Known)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="foundations" value="html"> HTML5</label>
+                        <label><input type="checkbox" name="foundations" value="css"> CSS3</label>
+                        <label><input type="checkbox" name="foundations" value="javascript"> JavaScript</label>
+                        <label><input type="checkbox" name="foundations" value="csharp"> C#</label>
+                        <label><input type="checkbox" name="foundations" value="python"> Python</label>
+                        <label><input type="checkbox" name="foundations" value="java"> Java</label>
+                        <label><input type="checkbox" name="foundations" value="sql"> SQL</label>
+                        <label><input type="checkbox" name="foundations" value="git"> Git Version Control</label>
+                        <label><input type="checkbox" name="foundations" value="none"> None (Beginner)</label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <label>How Did You Hear About Us?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="referral" value="google"> Google Search</label>
+                        <label><input type="checkbox" name="referral" value="linkedin"> LinkedIn</label>
+                        <label><input type="checkbox" name="referral" value="youtube"> YouTube</label>
+                        <label><input type="checkbox" name="referral" value="friend"> Friend/Colleague</label>
+                        <label><input type="checkbox" name="referral" value="instagram"> Instagram</label>
+                        <label><input type="checkbox" name="referral" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="idproof">Upload Identity Proof (PDF / Image)</label>
+                    <input type="file" id="idproof" name="idproof" accept="image/*,.pdf" required>
+                </div>
+            </fieldset>
+
+            <!-- Declaration -->
+            <div class="declaration">
+                <label><input type="checkbox" name="declaration" required> I hereby declare that all the details provided above are true to the best of my knowledge.</label>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Submit Registration</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
